@@ -1,54 +1,59 @@
-1. Завантаження даних
+1. Data Loading
 
-Встановіть та підключіть бібліотеку:
+Install and load the library:
 
-install.packages("tidyverse")
+install.packages("tidyverse")  
 library(tidyverse)
 
+Load any tabular file into R (for example, data.csv).
 
-Завантажте у R будь-який табличний файл (наприклад, data.csv).
-
-data <- read.csv("data.csv", sep = ";")   # якщо csv
+data <- read.csv("data.csv", sep = ";") # if csv  
 View(data)
 
+If the data is in Excel – use the readxl package.
 
-Якщо дані в Excel – використайте пакет readxl.
+2. Exploring the Data
 
-2. Ознайомлення з даними
-Перегляньте структуру даних (str(), glimpse()).
-Визначте, які є числові та текстові змінні.
-Перевірте, чи є пропущені значення (NA).
+Check the structure of the data (str(), glimpse()).
+Identify which variables are numeric and which are text.
+Check if there are any missing values (NA).
 
-3. Вибір і фільтрація даних
-Виберіть 1–2 стовпці і створіть новий датафрейм.
-Виберіть усі стовпці, назви яких містять певний фрагмент тексту (наприклад, "id" чи "score").
-Відберіть рядки за умовою:
-числовий показник > заданого значення,
-або текстовий стовпець містить певне слово (використати str_detect()).
+3. Selecting and Filtering Data
 
-4. Трансформації даних
-Додайте новий стовпець, який є результатом обчислень на основі існуючих (наприклад, нормоване значення).
-Створіть змінну-індикатор (0/1), яка показує, чи виконується певна умова.
-Додайте один рядок із вигаданими даними.
+Select 1–2 columns and create a new dataframe.
+Select all columns whose names contain a certain text fragment (e.g., "id" or "score").
+Select rows by condition: numeric value > specified threshold, or text column contains a certain word (use str_detect()).
 
-5. Сортування та відбір
-Відсортуйте дані за обраним числовим показником (зростання / спадання).
-Виберіть top-10 рядків за цим показником.
+4. Data Transformations
 
-6. Групування та агрегація
-Згрупуйте дані за будь-яким категоріальним стовпцем.
-Для кожної групи обчисліть:
-кількість спостережень;
-середнє медіану та стандартне відхилення для обраного числового показника.
-Додайте нову змінну – коефіцієнт варіації (sd / mean).
+Add a new column that is the result of calculations based on existing ones (e.g., a normalized value).
+Create a dummy variable (0/1) that shows whether a certain condition is met.
+Add one row with fictional data.
 
-7. Вивантаження результатів
-Збережіть результати групування у CSV-файл.
-Використайте пакет stargazer для формування звіту в HTML-таблиці.
+5. Sorting and Subsetting
 
-Звіт
-У звіті подати:
-опис завантаженого файлу (назви стовпців, кількість рядків);
-приклади коду R для кожного завдання;
-скріншоти проміжних результатів;
-висновки щодо можливостей tidyverse.
+Sort the data by a chosen numeric variable (ascending / descending).
+Select the top 10 rows by this variable.
+
+6. Grouping and Aggregation
+
+Group the data by any categorical variable.
+For each group, calculate:
+number of observations
+mean
+median
+standard deviation of a chosen numeric variable
+Add a new variable – the coefficient of variation (sd / mean).
+
+7. Exporting Results
+
+Save the grouped results into a CSV file.
+Use the stargazer package to generate a report in an HTML table.
+
+Report
+
+The report should include:
+description of the loaded file (column names, number of rows)
+R code examples for each task
+screenshots of intermediate results
+conclusions about the capabilities of tidyverse

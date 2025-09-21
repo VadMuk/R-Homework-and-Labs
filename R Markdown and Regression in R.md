@@ -1,16 +1,20 @@
 1.Data Preparation
 
   Download the dataset readwrite2.csv.
+  
   Import the dataset into R and inspect its structure using head() and str().
+  
   Briefly describe the variables (reading, writing, etc.).
 
 2.Building the Regression Model
 
   Fit a simple linear regression model predicting writing scores from reading scores.
+  
   Display the summary of the model and interpret:
-  Intercept
-  Regression coefficient
-  R² and F-statistic
+  
+    Intercept
+    Regression coefficient
+    R² and F-statistic
 
 3.Visualization
 

@@ -1,9 +1,7 @@
 1.Data Preparation
 
   Download the dataset readwrite2.csv.
-  
   Import the dataset into R and inspect its structure using head() and str().
-  
   Briefly describe the variables (reading, writing, etc.).
 
 2.Building the Regression Model

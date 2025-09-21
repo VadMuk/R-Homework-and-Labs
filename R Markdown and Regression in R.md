@@ -1,10 +1,10 @@
-1.Data Preparation
+# 1.Data Preparation
 
   Download the dataset readwrite2.csv.
   Import the dataset into R and inspect its structure using head() and str().
   Briefly describe the variables (reading, writing, etc.).
 
-2.Building the Regression Model
+# 2.Building the Regression Model
 
   Fit a simple linear regression model predicting writing scores from reading scores.
   
@@ -14,7 +14,7 @@
     Regression coefficient
     R² and F-statistic
 
-3.Visualization
+# 3.Visualization
 
   Create a scatterplot of reading vs. writing scores.
 
@@ -22,7 +22,7 @@
 
   Comment on the linearity of the relationship.
 
-4.Model Assumptions
+# 4.Model Assumptions
 
   Test the assumption of homoscedasticity using the Breusch-Pagan test (ncvTest()).
 
@@ -30,7 +30,7 @@
 
   Plot diagnostic graphs (plot(model)) and describe the findings.
 
-5. Outlier and Influence Analysis
+# 5. Outlier and Influence Analysis
 
   Calculate Cook’s distance and identify potential influential observations.
 
@@ -38,7 +38,7 @@
 
   Create a new dataset excluding observations with standardized residuals > 2.
 
-5.Improved Model
+# 6.Improved Model
 
   Re-run the regression on the cleaned dataset.
 
@@ -52,7 +52,7 @@
 
   Discuss how removing outliers influenced model performance.
 
-6.Standardized Model
+# 7.Standardized Model
 
   Build a standardized regression model using scale().
 

@@ -56,5 +56,5 @@
 
   - Build a standardized regression model using scale().
 
-  Interpret the standardized coefficient and compare it with the unstandardized one.
+  - Interpret the standardized coefficient and compare it with the unstandardized one.
 

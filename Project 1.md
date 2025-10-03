@@ -18,10 +18,10 @@ Examples:
 3. Importing and Preparing the Data
    
 # 3. Use tidyverse for:
-- Importing (readr or readxl).
-- Cleaning (dplyr for filtering, transforming).
-- Converting categorical variables (mutate, factor).
-- Reshaping into tidy format (tidyr).
+- Importing  -- readr or readxl.
+- Cleaning  -- dplyr for filtering, transforming.
+- Converting categorical variables: mutate, factor.
+- Reshaping into tidy format  -- tidyr.
 Example:
 library(tidyverse)
 
@@ -31,9 +31,9 @@ data <- read_csv("dataset.csv") %>%
   
 # 4. Descriptive Analysis
 Build basic visualizations:
-- Histograms (geom_histogram).
-- Scatterplots (geom_point).
-- Boxplots for categorical variables (geom_boxplot).
+- Histograms  -- geom_histogram.
+- Scatterplots  -- geom_point.
+- Boxplots for categorical variables -- geom_boxplot.
 
 Calculate basic statistics: mean, median, sd, min/max.
 

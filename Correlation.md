@@ -1,4 +1,4 @@
-# Laboratory Work 8: Correlation Analysis Using R
+# Lab 2: Correlation Analysis Using R
 
 # 1. Load the dataset
 

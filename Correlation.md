@@ -2,22 +2,22 @@
 
 # 1. Load the dataset
 
-  Use the file data_ITAproject.csv provided.
+  Use file in the .csv format.
   Display the first few rows and summary statistics for all numeric variables.
 
 # 2. Compute Covariance
 
-  Calculate the covariance between HolisticScore and Composite.
+  Calculate the covariance between Column1 and Column2.
   Interpret the result: does it indicate a positive or negative relationship?
 
 # 3. Compute Correlations
 
-  Calculate Pearson, Spearman, and Kendall correlations between HolisticScore and Composite.
+  Calculate Pearson, Spearman, and Kendall correlations between Column1 and Column2.
   Compare the values and explain in which situations each method is most appropriate.
 
 # 4. Generate a Correlation Matrix
 
-  Compute the Pearson correlation matrix for all score-related variables (HolisticScore, Composite, Pronunciation, LexicalGrammar, RhetoricalOrganization, TopicDevelopment).
+  Compute the Pearson correlation matrix for all score-related variables for all Columns.
   Interpret the two highest and two lowest correlation values.
 
 # 5. Visualize the Correlation Matrix
@@ -32,8 +32,8 @@
 
 # 7. Exploratory Research Task
 
-  Load the FlegeYeniKomshianLiu.sav dataset.
-  Examine the relationship between Age of Acquisition (AOA) and English Pronunciation (PronEng):
+  Load the file in format .sav with dataset.
+  Examine the relationship between two parameters:
       Check normality using histograms, Q-Q plots, and the Shapiro-Wilk test.
       Decide which correlation test is appropriate (Pearson or Spearman) and justify your choice.
       Compute the correlation and interpret its value and direction.

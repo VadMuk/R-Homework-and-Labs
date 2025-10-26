@@ -1,10 +1,10 @@
-**Homework  11**
+# **Homework  11**
 
-**1.Goal**
+# **1.Goal**
 
 Implement a classification of iris plant varieties (Iris Setosa - 0, Iris Versicolor - 1, Iris Virginica - 2) based on four characteristics: the size of the pistils and stamens of its flowers.
 
-**2.Tasks**
+# **2.Tasks**
 
 1.Download dataset
 
@@ -14,7 +14,7 @@ Implement a classification of iris plant varieties (Iris Setosa - 0, Iris Versic
    
 4. Train and evaluate the model
 
-**3.Execution of work**
+# **3.Execution of work**
 
 Multi-class classification is one of the main types of problems solved by neural networks. Listing 1 shows an example of the data.
 
@@ -130,7 +130,7 @@ Listing 7 - Network training
 
 During the training process, four quantities are displayed: the network loss on the training data and the network accuracy on the training data, as well as the loss and accuracy on the data that was not involved in the training.
 
-**4.Requirements**
+# **4.Requirements**
 
 1. Explore different ANN architectures: different number of layers, different number of neurons per layer
    

@@ -10,6 +10,10 @@ Achieve a forecast accuracy of at least 95%
 What is sentiment analysis?
 Sentiment analysis can be used to determine a person's attitude (e.g., mood) toward a text, interaction, or event. Therefore, sentiment analysis belongs to the field of natural language processing, in which the meaning of a text must be deciphered to extract sentiment and mood.
 
+
+<img width="692" height="389" alt="image" src="https://github.com/user-attachments/assets/1dbde3a3-734e-4de1-bb0a-b6e7594ff566" />
+
+
 The sentiment spectrum is typically divided into positive, negative, and neutral categories. Using sentiment analysis, one can, for example, predict customer opinions and attitudes toward a product based on the reviews they write. Therefore, sentiment analysis is widely applied to reviews, surveys, texts, and much more.
 
 

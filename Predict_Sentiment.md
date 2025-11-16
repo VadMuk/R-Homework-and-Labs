@@ -23,7 +23,7 @@ The dataset was created by Stanford University researchers and presented in a 20
 
 # Importing dependencies and retrieving data
 Let's start by importing the necessary dependencies for data preprocessing and model building.
-<pre></pre>
+<pre>
 %matplotlib inline
 import matplotlib
 import matplotlib.pyplot as plt

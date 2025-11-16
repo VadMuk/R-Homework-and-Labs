@@ -79,7 +79,18 @@ index = imdb.get_word_index()
 reverse_index = dict([(value, key) for (key, value) in index.items()])
 decoded = " ".join( [reverse_index.get(i - 3, "#") for i in data[0]] )
 print(decoded)
-this film was just brilliant casting location scenery story direction everyone's really suited the part they played and you could just imagine being there robert # is an amazing actor and now the same being director # father came from the same scottish island as myself so i loved the fact there was a real connection with this film the witty remarks throughout the film were great it was just brilliant so much that i bought the film as soon as it was released for # and would recommend it to everyone to watch and the fly fishing was amazing really cried at the end it was so sad and you know what they say if you cry at a film it must have been good and definitely this was also # to the two little boys that played the # of Norman and paul they were just brilliant children are often left out of the # list i think because the stars that play them all grown up are such a big profile for the whole film but these children are amazing and should be praised for what they have done don't you think the whole story was so lovely because it was true and was someone's life after all that was shared with us all
+
+this film was just brilliant casting location scenery story direction everyone's really suited the part they played and you could just 
+imagine being there robert is an amazing actor and now the same being director 
+father came from the same scottish island as myself so i loved the fact there was a real connection with this film the witty remarks 
+throughout the film were great it was just brilliant so much that i bought the film as soon as it was released for 
+and would recommend it to everyone to watch and the fly fishing was amazing really cried at the end
+it was so sad and you know what they say if you cry at a film it must have been good and definitely
+this was also # to the two little boys that played the 
+of Norman and paul they were just brilliant children are often left out of the list i think because the stars 
+that play them all grown up are such a big profile for the whole film but these children are amazing and 
+should be praised for what they have done don't you think the whole story was so lovely
+because it was true and was someone's life after all that was shared with us all
 </pre>
 
 # Data preparation

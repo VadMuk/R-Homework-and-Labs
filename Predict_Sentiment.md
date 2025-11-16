@@ -19,6 +19,9 @@ The sentiment spectrum is typically divided into positive, negative, and neutral
 
 # IMDb dataset
 
+<img width="692" height="356" alt="image" src="https://github.com/user-attachments/assets/76a22577-7c9b-45d8-aff7-8c411ea19bbf" />
+
+
 The IMDb dataset consists of 50,000 user-generated movie reviews, categorized as positive (1) and negative (0).
 
 The reviews are pre-processed and each is encoded as a sequence of word indices as integers.

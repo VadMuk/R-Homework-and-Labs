@@ -1,24 +1,29 @@
 
-Target
+# Target
 Predict Sentiment From Movie Reviews
-Tasks
-Get acquainted with the classification problem
-To study the methods of representing text for transmission to the ANN
-Achieve a forecast accuracy of at least 95%
-Execution of work
+
+# Tasks
+To study the methods of representing text for transmission to the ANN
+Achieve a forecast accuracy of at least 95%
+
+# Execution of work
 What is sentiment analysis?
 Sentiment analysis can be used to determine a person's attitude (e.g., mood) toward a text, interaction, or event. Therefore, sentiment analysis belongs to the field of natural language processing, in which the meaning of a text must be deciphered to extract sentiment and mood.
 
 The sentiment spectrum is typically divided into positive, negative, and neutral categories. Using sentiment analysis, one can, for example, predict customer opinions and attitudes toward a product based on the reviews they write. Therefore, sentiment analysis is widely applied to reviews, surveys, texts, and much more.
-IMDb dataset
+
+
+# IMDb dataset
 
 The IMDb dataset consists of 50,000 user-generated movie reviews, categorized as positive (1) and negative (0).
 The reviews are pre-processed and each is encoded as a sequence of word indices as integers.
 Words in reviews are indexed by their overall frequency in the dataset. For example, the integer "2" encodes the second most frequently used word.
 50,000 reviews are divided into two sets: 25,000 for training and 25,000 for testing.
 The dataset was created by Stanford University researchers and presented in a 2011 paper, which achieved 88.89% prediction accuracy. The dataset was also used in the 2011 Kaggle community competition "Bag of Words Meets Bags of Popcorn."
-Importing dependencies and retrieving data
+
+# Importing dependencies and retrieving data
 Let's start by importing the necessary dependencies for data preprocessing and model building.
+<pre></pre>
 %matplotlib inline
 import matplotlib
 import matplotlib.pyplot as plt
@@ -26,13 +31,21 @@ import numpy as np
 from keras.utils import to_categorical
 from keras import models
 from keras import layers
+</pre>
+
 Let's load the IMDb dataset, which is already built into Keras. Since we don't want a 50/50 split of training and testing data, we'll immediately merge the data after loading for an 80/20 split:
+
+<pre>
 from keras.datasets import imdb
 (training_data, training_targets), (testing_data, testing_targets) = imdb.load_data(num_words=10000)
 data = np.concatenate((training_data, testing_data), axis=0)
 targets = np.concatenate((training_targets, testing_targets), axis=0)
-Data mining
+</pre>
+  
+# Data mining
+
 Let's explore our dataset:
+<pre>
 print("Categories:", np.unique(targets))
 print("Number of unique words:", len(np.unique(np.hstack(data))))
 Categories: [0 1]
@@ -42,6 +55,8 @@ print("Average Review length:", np.mean(length))
 print("Standard Deviation:", round(np.std(length)))
 Average Review length: 234.75892
 Standard Deviation: 173.0
+
+</pre>
 You can see that all data falls into two categories: 0 or 1, representing the sentiment of the review. The entire dataset contains 9998 unique words, with the average review length being 234 words with a standard deviation of 173.
 Let's look at a simple way of learning:
 print("Label:", targets[0])

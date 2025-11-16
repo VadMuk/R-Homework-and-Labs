@@ -1,5 +1,5 @@
 
-# Target of Project2
+# Target of Project 2
 Predict Sentiment From Movie Reviews
 
 # Tasks

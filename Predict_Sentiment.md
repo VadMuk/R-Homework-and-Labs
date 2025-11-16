@@ -61,6 +61,8 @@ You can see that all data falls into two categories: 0 or 1, representing the se
 Let's look at a simple way of learning:
 
 </pre>
+
+<pre>
 print("Label:", targets[0])
 Label: 1
 print(data[0])
@@ -170,5 +172,7 @@ print(np.mean(results.history["val_acc"]))
   
 # Requirements
 .Build and train a neural network for text processing
+
 .To investigate the results for different sizes of text representation vector
+
 .Write a function that allows you to enter custom text (in the report, provide an example of how the network works with custom text)

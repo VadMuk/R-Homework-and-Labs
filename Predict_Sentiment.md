@@ -16,10 +16,13 @@ The sentiment spectrum is typically divided into positive, negative, and neutral
 # IMDb dataset
 
 The IMDb dataset consists of 50,000 user-generated movie reviews, categorized as positive (1) and negative (0).
-The reviews are pre-processed and each is encoded as a sequence of word indices as integers.
-Words in reviews are indexed by their overall frequency in the dataset. For example, the integer "2" encodes the second most frequently used word.
-50,000 reviews are divided into two sets: 25,000 for training and 25,000 for testing.
-The dataset was created by Stanford University researchers and presented in a 2011 paper, which achieved 88.89% prediction accuracy. The dataset was also used in the 2011 Kaggle community competition "Bag of Words Meets Bags of Popcorn."
+
+The reviews are pre-processed and each is encoded as a sequence of word indices as integers.
+  - Words in reviews are indexed by their overall frequency in the dataset. For example, the integer "2" encodes the second most frequently used word.
+  - 50,000 reviews are divided into two sets: 25,000 for training and 25,000 for testing.
+
+The dataset was created by Stanford University researchers and presented in a 2011 paper, which achieved 88.89% prediction accuracy. 
+The dataset was also used in the 2011 Kaggle community competition "Bag of Words Meets Bags of Popcorn."
 
 # Importing dependencies and retrieving data
 Let's start by importing the necessary dependencies for data preprocessing and model building.

@@ -1,3 +1,4 @@
+# Homework 15
 
 # Target
 Implement classification of black-and-white images of handwritten digits (28x28) into 10 categories (from 0 to 9).

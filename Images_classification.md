@@ -3,6 +3,7 @@
 Implement classification of black-and-white images of handwritten digits (28x28) into 10 categories (from 0 to 9).
 
 
+<img width="692" height="519" alt="image" src="https://github.com/user-attachments/assets/7e4743b5-2c28-409a-ba4d-ccf91f8be4d8" />
 
 
 The dataset contains 60,000 training images and 10,000 testing images.
@@ -53,6 +54,7 @@ test_labels = to_categorical(test_labels)
 </pre>
 
 Now you can set up the basic network architecture.
+
 Listing 5:
 <pre>
 from tensorflow.keras.layers import Dense, Activation, Flatten
@@ -67,6 +69,7 @@ To prepare the network for training, you need to configure three more parameters
 .a loss function that determines how the network should evaluate the quality of its performance on training data and, accordingly, how to adjust it in the right direction;
 .optimizer - a mechanism by which the network will update itself based on observed data and a loss function;
 .metrics for monitoring during the training and testing stages - here we will only be interested in accuracy (the proportion of correctly classified images).
+
 Listing 6:
 <pre>
 model.compile(optimizer='adam',loss='categorical_crossentropy', metrics=['accuracy'])
@@ -86,7 +89,10 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print('test_acc:', test_acc)
 </pre>
   
-Requirements
+# Requirements
+
 .Find a network architecture that will achieve classification accuracy of at least 95%
+
 .To investigate the influence of different optimizers and their parameters on the learning process
+
 .Write a function that will allow loading a custom image not from a dataset
